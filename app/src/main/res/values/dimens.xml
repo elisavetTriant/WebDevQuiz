@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="root_layout_padding_top">16dp</dimen>
+    <dimen name="root_layout_padding_bottom">16dp</dimen>
+    <dimen name="answers_padding">12dp</dimen>
+    <dimen name="questions_padding">12dp</dimen>
+    <dimen name="messages_padding">12dp</dimen>
+    <dimen name="answers_margin">18dp</dimen>
+    <dimen name="messages_margin">14dp</dimen>
+    <dimen name="card_margin">14dp</dimen>
+    <dimen name="card_radius">4dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="messages_font_size">24sp</dimen>
+    <dimen name="questions_font_size">24sp</dimen>
+    <dimen name="answers_font_size">18sp</dimen>
+</resources>

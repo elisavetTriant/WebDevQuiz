@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MessagesStyle">
+        <item name="android:textSize">@dimen/messages_font_size</item>
+        <item name="android:padding">@dimen/messages_padding</item>
+        <item name="android:layout_margin">@dimen/messages_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:background">@color/colorIcons</item>
+    </style>
+
+    <style name="CardViewStyle" parent="CardView">
+        <item name="android:layout_margin">@dimen/card_margin</item>
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@color/colorIcons</item>
+    </style>
+
+    <style name="QuestionsStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/questions_font_size</item>
+        <item name="android:padding">@dimen/questions_padding</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorIcons</item>
+    </style>
+
+    <style name="AnswersStyle">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:buttonTint">@color/colorPrimaryText</item>
+        <item name="android:textSize">@dimen/answers_font_size</item>
+        <item name="android:padding">@dimen/answers_padding</item>
+        <item name="android:layout_marginLeft">@dimen/answers_margin</item>
+    </style>
+
+    <style name="EditTextAnswersStyle">
+        <item name="android:background">@color/colorIcons</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textSize">@dimen/answers_font_size</item>
+        <item name="android:padding">@dimen/answers_padding</item>
+        <item name="android:layout_margin">@dimen/answers_margin</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/questions_font_size</item>
+        <item name="android:padding">@dimen/questions_padding</item>
+        <item name="android:layout_margin">@dimen/card_margin</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorIcons</item>
+    </style>
+
+</resources>
