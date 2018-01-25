@@ -1,6 +1,6 @@
 # WebDevQuiz Android App
 
-This is a small Quiz App that tests your knowledge on Web Development concepts. This was made for the Google Developer Challenge 2017-2018 as an assignment to practice with Java.
+This is a small Quiz App that tests your knowledge on Web Development concepts. This was made for the Google Developer Challenge 2017-2018 as an assignment to practice with building Layouts in and Android and designing interactivity with Java.
 
 I took a minimalistic approach, following the project's rubric (https://review.udacity.com/#!/rubrics/158/view) and everything that was covered in the lessons so far, and came up with this short quiz.
 
@@ -511,7 +511,7 @@ And the strings.xml looks like this:
 </resources>
 ```
 
-The java code looks like this (https://github.com/elisavetTriant/WebDevQuiz/blob/master/app/src/main/java/com/example/android/webdevquiz/MainActivity.java
+The java code looks like this (https://github.com/elisavetTriant/WebDevQuiz/blob/master/app/src/main/java/co/elisavet/quiz/MainActivity.java)
 ```java
 package co.elisavet.quiz;
 
