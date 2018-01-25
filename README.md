@@ -12,6 +12,14 @@ This is how the App behaves: (short video on Youtube)
 
 [![WebDevQuiz App](http://img.youtube.com/vi/qUqUGlbBtgY/0.jpg)](https://youtu.be/qUqUGlbBtgY "WebDevQuiz App")
 
+This is what the UI looks like on my device (Lenovo tablet Lollipop API22)
+
+Portrait
+![Udacity WebDevQuiz App Portrait](https://github.com/elisavetTriant/WebDevQuiz/blob/master/screenshots/Screenshot_Quiz_portrait.png "Udacity WebDevQuiz App Portrait")
+
+Landscape
+![Udacity WebDevQuiz App Landscape](https://github.com/elisavetTriant/WebDevQuiz/blob/master/screenshots/Screenshot_Quiz_landscape.png "Udacity WebDevQuiz App Landscape")
+
 And here is what the layout xml code looks like (file app/src/main/res/layout/activity_main.xml, or https://github.com/elisavetTriant/WebDevQuiz/blob/master/app/src/main/res/layout/activity_main.xml):
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -394,6 +402,113 @@ And here is what the layout xml code looks like (file app/src/main/res/layout/ac
 
     </LinearLayout>
 </ScrollView>
+```
+Don't forget to take a look at the resources folder ( /app/res/values ) and take a look at the code there also. For instance the styles.xml code looks like this:
+```xml
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MessagesStyle">
+        <item name="android:textSize">@dimen/messages_font_size</item>
+        <item name="android:padding">@dimen/messages_padding</item>
+        <item name="android:layout_margin">@dimen/messages_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:background">@color/colorIcons</item>
+    </style>
+
+    <style name="CardViewStyle" parent="CardView">
+        <item name="android:layout_margin">@dimen/card_margin</item>
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@color/colorIcons</item>
+    </style>
+
+    <style name="QuestionsStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/questions_font_size</item>
+        <item name="android:padding">@dimen/questions_padding</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorIcons</item>
+    </style>
+
+    <style name="AnswersStyle">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:buttonTint">@color/colorPrimaryText</item>
+        <item name="android:textSize">@dimen/answers_font_size</item>
+        <item name="android:padding">@dimen/answers_padding</item>
+        <item name="android:layout_marginLeft">@dimen/answers_margin</item>
+    </style>
+
+    <style name="EditTextAnswersStyle">
+        <item name="android:background">@color/colorIcons</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textSize">@dimen/answers_font_size</item>
+        <item name="android:padding">@dimen/answers_padding</item>
+        <item name="android:layout_margin">@dimen/answers_margin</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/questions_font_size</item>
+        <item name="android:padding">@dimen/questions_padding</item>
+        <item name="android:layout_margin">@dimen/card_margin</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorIcons</item>
+    </style>
+
+</resources>
+```
+And the strings.xml looks like this:
+```xml
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Web Development Quiz</string>
+    <string name="welcome_message">Welcome to the Web Development Quiz!</string>
+    <string name="question1">1. What does HTML stand for?</string>
+    <string name="question1_answer1">Hyper Text Markup Language</string>
+    <string name="question1_answer2">Hyperlinks and Text Markup Language</string>
+    <string name="question1_answer3">Home Tool Markup Language</string>
+    <string name="question2">2. Who is making the Web standards?</string>
+    <string name="question2_answer1">Google</string>
+    <string name="question2_answer2">The World Wide Web Consortium</string>
+    <string name="question2_answer3">Microsoft</string>
+    <string name="question2_answer4">Mozilla</string>
+    <string name="question3">3. What does CSS stand for?</string>
+    <string name="question3_answer1">Creative Style Sheets</string>
+    <string name="question3_answer2">Cascading Style Sheets</string>
+    <string name="question3_answer3">Computer Style Sheets</string>
+    <string name="question3_answer4">Colorful Style Sheets</string>
+    <string name="question4">4. Where in an HTML document is the correct place to refer to an external style sheet?</string>
+    <string name="question4_answer1">At the end of the document</string>
+    <string name="question4_answer2"><![CDATA[In the <body> section]]></string>
+    <string name="question4_answer3"><![CDATA[In the <head> section]]></string>
+    <string name="question5">5. What does PHP stand or stood for?</string>
+    <string name="question5_answer1">Personal Hypertext Processor</string>
+    <string name="question5_answer2">PHP: Hypertext Preprocessor</string>
+    <string name="question5_answer3">Private Home Page</string>
+    <string name="question5_answer4">Personal Home Page</string>
+    <string name="question6">6. PHP server scripts are surrounded by delimiters, which?</string>
+    <string name="question6_answer1"><![CDATA[<?php...?>]]></string>
+    <string name="question6_answer2"><![CDATA[<?php>...</?>]]></string>
+    <string name="question6_answer3"><![CDATA[<script>...</script>]]></string>
+    <string name="question6_answer4"><![CDATA[<?...?>]]></string>
+    <string name="question7">7. How do you write \"Hello World\" in PHP?</string>
+    <string name="question7_correct_answer1">echo \"Hello World\";</string>
+    <string name="question7_correct_answer2">echo \'Hello World\';</string>
+    <string name="question7_answer_hint">Your Code Here</string>
+    <string name="submit_button">Submit!</string>
+    <string name="result_good_job">Your score is <xliff:g id="score1" example="60">%d</xliff:g>%%! You rock!</string>
+    <string name="result_try_harder">Your score is <xliff:g id="score2" example="20">%d</xliff:g>%%! Try Harder!</string>
+    <string name="result_ninja">Your score is <xliff:g id="score3" example="100">%d</xliff:g>%%! Wow you got everything right! You are a Ninja!</string>
+</resources>
 ```
 
 The java code looks like this (https://github.com/elisavetTriant/WebDevQuiz/blob/master/app/src/main/java/com/example/android/webdevquiz/MainActivity.java
