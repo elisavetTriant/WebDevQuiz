@@ -385,7 +385,8 @@ And here is what the layout xml code looks like (file app/src/main/res/layout/ac
                     style="@style/EditTextAnswersStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/question7_answer_hint" />
+                    android:hint="@string/question7_answer_hint"
+                    android:inputType="text" />
 
 
             </LinearLayout>
@@ -575,23 +576,17 @@ public class MainActivity extends AppCompatActivity {
      * @params view
     */
     public void submitQuiz(View view) {
-
         int score = handleGrading();
 
         if ( score <= 30) {
             displayToastMessage(getString(R.string.result_try_harder, score));
-        }
-
-        if (score >= 40 && score <= 90){
+        } else if (score >= 40 && score <= 90){
             displayToastMessage(getString(R.string.result_good_job, score));
-        }
-
-        if (score == 100){
+        } else {
             displayToastMessage(getString(R.string.result_ninja, score));
         }
 
     }
-
 
     /*
      * This method handles the Grading Logic
@@ -632,7 +627,7 @@ public class MainActivity extends AppCompatActivity {
              points +=2;
          }
          //Question 7 Correct answer: echo "Hello World"; OR echo 'Hello World';
-         if (q7aEdit.getText().toString().equals(getString(R.string.question7_correct_answer1)) || q7aEdit.getText().toString().equals(getString(R.string.question7_correct_answer2))) {
+         if (q7aEdit.getText().toString().trim().equals(getString(R.string.question7_correct_answer1)) || q7aEdit.getText().toString().trim().equals(getString(R.string.question7_correct_answer2))) {
              //award +2 points!
              points +=2;
          }
@@ -649,5 +644,6 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(context, message, duration);
         toast.show();
     }
+
 }
 ```
