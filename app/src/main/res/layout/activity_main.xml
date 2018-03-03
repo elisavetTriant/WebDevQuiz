@@ -361,7 +361,8 @@
                     style="@style/EditTextAnswersStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/question7_answer_hint" />
+                    android:hint="@string/question7_answer_hint"
+                    android:inputType="text" />
 
 
             </LinearLayout>
